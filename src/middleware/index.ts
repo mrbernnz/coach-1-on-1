@@ -12,4 +12,6 @@ const bodyParserOptions: BodyParserOptions = {
   }
 };
 
+export {errorListener} from './errorHandler';
+
 export default compose([errorHandler, cors(), bodyParser(bodyParserOptions), logger]);

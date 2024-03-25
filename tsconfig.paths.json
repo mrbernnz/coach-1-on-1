@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@student": ["src/student/*"],
-      "@coach": ["components/coach/*"]
+      "@coach/*": ["coach/*"],
+      "@student/*": ["student/*"],
+      "@configs/*": ["configs/*"],
+      "@middleware": ["middleware/index"]
     }
   }
 }
