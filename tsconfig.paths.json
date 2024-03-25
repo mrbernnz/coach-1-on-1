@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@student": ["src/student/*"],
+      "@coach": ["components/coach/*"]
+    }
+  }
+}

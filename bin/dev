@@ -1,0 +1,10 @@
+#!/usr/bin/env ts-node
+
+const http = require('http');
+const {default: app} = require('../src/app');
+const {logger} = require('../src/utils/logger');
+
+const server = http.createServer(app.callback());
+const PORT = process.env.PORT ?? 3005;
+
+server.listen(PORT, () => logger.info(`Listening on ${PORT}`));
