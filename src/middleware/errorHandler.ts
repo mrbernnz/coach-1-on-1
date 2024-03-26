@@ -4,8 +4,8 @@ export async function errorHandler(ctx: Context, next: Next): Promise<void> {
   try {
     await next();
   } catch (err) {
-    ctx.status = err.status ?? 500;
-    ctx.body = err.message;
+    ctx.status = err.status ?? err.statusCode ?? 500;
+    ctx.body = {message: err.message};
     ctx.app.emit('error', err, ctx);
   }
 }
