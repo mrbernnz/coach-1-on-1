@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@layout/*": ["layout/*"],
+      "@coaches/*": ["coaches/*"],
+      "@students/*": ["students/*"],
+      "@calendar/*": ["calendar/*"]
+    }
+  }
+}
