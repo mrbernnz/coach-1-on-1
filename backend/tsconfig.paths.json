@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@coach/*": ["coach/*"],
+      "@student/*": ["student/*"],
+      "@configs/*": ["configs/*"],
+      "@middleware": ["middleware/index"]
+    }
+  }
+}

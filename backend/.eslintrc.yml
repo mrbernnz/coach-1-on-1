@@ -1,0 +1,50 @@
+---
+env:
+  es6: true
+  node: true
+extends:
+  - 'standard-with-typescript'
+  - 'prettier/@typescript-eslint'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    ts: true
+  ecmaVersion: 2018
+  project: 'tsconfig.dev.json'
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+  - jest
+rules:
+  '@typescript-eslint/explicit-member-accessibility': off
+  '@typescript-eslint/explicit-function-return-type':
+    - off
+    - allowTypedFunctionExpressions: true
+  '@typescript-eslint/no-unused-vars': error
+  '@typescript-eslint/restrict-template-expressions': off
+  '@typescript-eslint/strict-boolean-expressions': off
+  '@typescript-eslint/triple-slash-reference':
+    - error
+    - path: always
+      types: always
+  linebreak-style:
+    - error
+    - unix
+  import/export: off
+  import/no-unresolved: off
+  import/prefer-default-export: off
+  indent:
+    - off
+    - 2
+  'no-unused-expressions':
+    - warn
+    - allowShortCircuit: true
+      allowTernary: true
+  'no-undef': 0
+  require-atomic-updates: off
+  semi:
+    - error
+    - always

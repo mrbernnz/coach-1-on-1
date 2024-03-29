@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "bin/dev", "package.json", "yarn.lock"],
+  "exec": "ts-node bin/dev",
+  "ext": "ts,js,yml",
+  "ignore": [".git/*", "bin/*", "dist/*", "node_modules/*"],
+  "verbose": true
+}
